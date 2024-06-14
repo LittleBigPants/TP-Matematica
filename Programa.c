@@ -8,20 +8,19 @@ int cambiarBase(char *numero, int baseInicial, int baseFinal)
     char resultado[100];
     char *puntero;
 
+    
     decimal = strtol(numero, &puntero, baseInicial);
 
-    /*     if (*puntero == '\0')
-        {
-            printf("El numero en decimal es: %ld\n", decimal);
-        }
-        else
-        {
-            printf("Error en la conversión.\n");
-        }
-     */
     ltoa(decimal, resultado, baseFinal);
 
-    printf("El numero es: %s\n", resultado);
+    if (*puntero == '\0')
+    {
+        printf("El numero es: %s\n", resultado);
+    }
+    else
+    {
+        printf("error en la conversión.\n");
+    }
 
     return 0;
 }
@@ -69,7 +68,7 @@ int main()
             break;
         }
 
-    } while (opcion == 2);
+    } while (opcion != 2);
 
     return 0;
 }
