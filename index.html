@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Handjet:wght@100..900&display=swap');
+        </style>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Tabla de la verdad</h1>
+    </header>
+    <div>
+        <div class="info">
+            <h3>Guía de operadores booleanos:</h3>
+            <ul>
+                <li><strong>&&</strong>: Multiplicación (AND)</li>
+                <li><strong>||</strong>: Suma (OR)</li>
+                <li><strong>!</strong>: Complemento (NOT)</li>
+                <li>Solo admite letras mayusculas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu">     
+        <input type="text" placeholder="escriba su funcion booleana" id="input">
+        <button id="button">Mostrar Tabla</button>
+        <Main >
+            <div id="tabla"></div>
+        </Main>
+        <lu id="d">FND:</lu>
+        <div id="fnd"></div>
+        <lu id="c">FNC:</lu>
+        <div id="fnc"> </div>
+    </div>
+
 </body>
 <script src="index.js"></script>
 </html>

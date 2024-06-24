@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: #00ff0b;
+    font-size: 50px;
+
+/*     text-shadow:
+    0 0 5px #00ff0b; */
+/*     0 0 10px #00ff0b;  */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.info {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    width: 20%; 
+    height: 30%; 
+    margin: 0;
+    padding: 10px; 
+    border: 1px solid #00ff0b; 
+    text-align: left; 
+   
+    font-size: 20px;
+    
+}
+
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Eliminar espacios entre celdas */
+    text-align: center; /* Centrar texto */
+}
+
+th, td {
+    border: 3px solid #00ff0b; /* Borde para celdas y encabezados */
+    padding: 20px; /* Espaciado interno */
+}
+
+
+tr:hover {    
+    text-shadow:
+    0 0 5px #00ff0b,
+    0 0 10px #00ff0b; }
+
+input{
+    width: 50vw;
+    border-color: #00ff0b;
+    background-color: black;
+    color: #00ff0b;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    font-family: "Geo", sans-serif;
+
+}
+
+input::placeholder {
+    color: #2e2f2e;
+    border-color: #00ff0b;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    font-family: "Geo", sans-serif;
+}
+input:hover {
+    text-shadow:
+    0 0 5px #00ff0b,
+    0 0 10px #00ff0b,
+    0 0 50px #00ff0b;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25vw;
+    border-color: #00ff0b;
+    background-color: black;
+    color: #00ff0b;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    font-family: "Geo", sans-serif;
+    
+}
+
+button:hover {
+    text-shadow:
+    0 0 5px #00ff0b,
+    0 0 10px #00ff0b,
+    0 0 50px #00ff0b;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 60%;
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: #00ff0b;
+}
