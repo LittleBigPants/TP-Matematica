@@ -14,11 +14,11 @@ int cambiarBase(char *numero, int baseInicial, int baseFinal)
 
     if (*puntero == '\0')
     {
-        printf("El numero es: %s\n", resultado);
+        printf("\nEl numero es: %s\n", resultado);
     }
     else
     {
-        printf("error en la conversion.\n");
+        printf("\nerror en la conversion.\n");
     }
 
     return 0;
@@ -39,7 +39,7 @@ int MenuBases()
         scanf("%d", &baseDeseada);
         cambiarBase(numero, baseIngresada, baseDeseada);
 
-        printf("desea salir de la calculadora?\n1-deseo continuar\n0-deseo salir\n");
+        printf("\nDesea salir de la calculadora?\n1-deseo continuar\n0-deseo salir\n");
         scanf("%d", &opcion);
     } while (opcion == 1);
 
@@ -81,8 +81,8 @@ void calcularMCDyMCM(int numero1, int numero2)
     int mcd = menor;
     int mcm = (numero1 * numero2) / mcd;
 
-    printf("El MCD es igual a %d\n", mcd);
-    printf("El MCM es igual a %d\n", mcm);
+    printf("\nEl MCD es igual a %d\n", mcd);
+    printf("\nEl MCM es igual a %d\n", mcm);
 }
 
 int menuMCDyMCM()
@@ -90,10 +90,10 @@ int menuMCDyMCM()
     int numero1;
     int numero2;
 
-    printf("Ingrese el primer numero\n");
+    printf("\nIngrese el primer numero\n");
     scanf("%d", &numero1);
 
-    printf("Ingrese el segundo numero\n");
+    printf("\nIngrese el segundo numero\n");
     scanf("%d", &numero2);
 
     calcularMCDyMCM(numero1, numero2);
@@ -104,10 +104,10 @@ int menuMCDyMCM()
 void enterosDivision()
 {
     int numero;
-    printf("Ingrese un numero entero\n");
+    printf("\nIngrese un numero entero\n");
     scanf("%d", &numero);
-    printf("El numero ingresado es divisible por el siguiente conjunto de numeros :\n");
-    for (int i = 1; i < numero; i++)
+    printf("\nEl numero ingresado es divisible por el siguiente conjunto de numeros :\n");
+    for (int i = 1; i <= numero; i++)
     {
         int resto = numero % i;
 
@@ -122,7 +122,7 @@ void esPrimo()
 {
 
     int num, i;
-    printf("Ingrese un numero entero: \n");
+    printf("\nIngrese un numero entero: \n");
     scanf("%d", &num);
 
     int contador = 0;
